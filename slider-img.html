@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img slider</title>
+
+    <link rel="stylesheet" href="img-slider.css">
+</head>
+<body>
+    <div class="wrapper-img">
+        <div class="container-img">
+            
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row-img">
+                    <div class="icon">➡️</div>
+                    <div class="description-img">
+                        <h4>What's so amazing about ev3 robot?</h4>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row-img">
+                    <div class="icon">1</div>
+                    <div class="description-img">
+                        <h4>Build your Own Robot</h4>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card" id="gifLabel">
+                <div class="row-img">
+                    <div class="icon">2</div>
+                    <div class="description-img">
+                        <h4>Play with legos</h4>
+                    </div>
+                </div>
+            </label>
+
+            <!-- Other inputs and labels omitted for brevity -->
+
+        </div>
+    </div>
+
+    <script>
+        const gifLabel = document.getElementById('gifLabel');
+        const gifImage = gifLabel.querySelector('img'); // Assuming there's an <img> element inside the label
+
+        // Pause the GIF
+        function pauseGIF() {
+            gifImage.style.pointerEvents = 'none'; // Prevent clicking on the GIF
+            gifImage.style.opacity = '0.5'; // Dim the GIF to indicate it's paused
+        }
+
+        // Play the GIF
+        function playGIF() {
+            gifImage.style.pointerEvents = 'auto'; // Allow clicking on the GIF again
+            gifImage.style.opacity = '1'; // Restore full opacity
+        }
+
+        // Call pauseGIF() when the radio input is unchecked
+        document.getElementById('c3').addEventListener('change', function() {
+            if (!this.checked) {
+                pauseGIF();
+            }
+        });
+
+        // Call playGIF() when the radio input is checked
+        document.getElementById('c3').addEventListener('change', function() {
+            if (this.checked) {
+                playGIF();
+            }
+        });
+    </script>
+</body>
+</html>

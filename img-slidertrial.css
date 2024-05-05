@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.wrapper-img {
+    width: 100%;
+    height: auto; /* Change height to auto for responsiveness */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to prevent horizontal scroll on smaller screens */
+}
+
+.container-img {
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 800px; /* Limit maximum width to prevent stretching on larger screens */
+    height: auto; /* Change height to auto for responsiveness */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow: hidden; /* Hide overflow to prevent horizontal scroll on smaller screens */
+}
+
+.card {
+    width: 20%; /* You can adjust this value as needed */
+    min-width: 80px; /* Set minimum width to prevent cards from becoming too narrow */
+    height: 400px; /* Change height to auto for responsiveness */
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row-img {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row-img > .icon {
+    background-color: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; /* Set height to match width for circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row-img > .description-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto; /* Change height to auto for responsiveness */
+    width: 100%; /* Adjust width for responsiveness */
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transform: all .3s ease;
+}
+
+.description-img h4 {
+    text-transform: uppercase;
+    background-color: #223;
+}
+
+.container-img > input {
+    display: none;
+}
+
+input:checked + label {
+    width: 100%; /* Change width to fill the container */
+}
+
+input:checked + label .description-img {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('https://i.ibb.co/zR0DThr/slider-img1.jpg');
+}
+
+.card[for="c2"] {
+    background-image: url('https://i.ibb.co/XLk3Ctz/slider-img2.jpg');
+}
+
+.card[for="c3"] {
+    background-image: url('https://media.giphy.com/media/RrhaAJY3hsFWxSYwrE/giphy.gif');
+}
+
+.card[for="c4"] {
+    background-image: url('https://media.giphy.com/media/LKJ86h7krfd7fgVwgL/giphy.gif');
+}
+
+.card[for="c5"] {
+    background-image: url('https://media.giphy.com/media/VBmsy68qGyMmuC48xn/giphy.gif');
+}
+
+.card[for="c6"] {
+    background-image: url('https://i.ibb.co/s99djmD/slider-img6.jpg');
+}

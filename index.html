@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANS Robotic Website</title>
+
+    <link rel="icon" href="https://i.ibb.co/9Ztfdxp/ROBOTICS.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Real-img-slider.css">
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="2accordion.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="">
+                    <img src="https://i.ibb.co/mFgh2Hz/IMG-1987.png" alt="logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#home"><img src="https://i.ibb.co/fChm6F5/home-icon-silhouette.png" alt=""> Home ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="#accordion-steps">Begin?</a></li>
+                        <li><a href="#guidance-div">10_Topics</a></li>
+                        <li><a href="#accordion-questions"> Questions</a></li>
+                    </ul>
+                </li>
+                
+                <li class="with-dropdown">
+                    <a href="#topic-buttons"><img src="https://i.ibb.co/8XYKTgh/reading-book-1.png" alt=""> Topics ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="https://ashl3y-lin.github.io/ANS-robotic_movement-part1/">Movement</a></li>
+                        <li><a href="#">Motor</a></li>
+                        <li><a href="#">Display</a></li>
+                        <li><a href="#">Sound</a></li>
+                        <li><a href="#">Control</a></li>
+                        <li><a href="#">Sensors</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Operator</a></li>
+                        <li><a href="#">Variable</a></li>
+                        <li><a href="#">My Block</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#wro"><img src="https://i.ibb.co/Drnm7cM/competition.png" alt=""> About WRO ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="#">WRO?</a></li>
+                        <li><a href="#">ANS_journey</a></li>
+                        <li><a href="#">Tips</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper" id="home">
+        <div class="header-container">
+            <div class="category-title">
+                <h3><span>* Way-2 exploration:</span> Build one single robot design to join you on the whole adventure!</h3>
+            </div>
+            <div class="header">
+                <div class="title">
+                    <h1>Discover Robotics! <br> Welcome to our ANS hub.</h1>
+                    <h3>This website is designed for you to learn about robotics while having fun!</h3>
+                    <a href="#accordion-steps"><button class="press-start">Begin my learning journey</button></a>
+                </div>
+                <!-- <div class="image-title">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZcwy3kl5j8zDYibvp3cyHFPUtiovr74mCcF72dkJU6g&s" alt=""></a>
+                </div> -->
+            </div>
+        </div>
+
+
+<!-- Image slider -->
+        <div class="img-outside-box">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide">
+                        <img src="https://i.ibb.co/zR0DThr/slider-img1.jpg" alt="Slide 1">
+                        <div class="description-img">
+                            <h4>5 reasons why ev3 robot is so amazing:</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.ibb.co/XLk3Ctz/slider-img2.jpg" alt="Slide 2">
+                        <div class="description-img">
+                            <h4>1- Build your Own Robot</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://s9.gifyu.com/images/SZnEM.gif" alt="Slide 3">
+                        <div class="description-img">
+                            <h4>2- Play with legos</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://s12.gifyu.com/images/SZnEK.gif" alt="Slide 4">
+                        <div class="description-img">
+                            <h4>3- Make it move</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://s12.gifyu.com/images/SZnEH.gif" alt="Slide 5">
+                        <div class="description-img">
+                            <h4>4- Learn to code</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.ibb.co/s99djmD/slider-img6.jpg" alt="Slide 6">
+                        <div class="description-img">
+                            <h4>5- Compete!</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="prev">&#10094;</div>
+                <div class="next">&#10095;</div>
+            </div>
+
+
+
+
+        </div>
+
+
+<!-- Accordion -->
+        <div class="accordion-container" id="accordion-steps">
+            <h1>How to begin?</h1>
+            <hr class="break">
+            <div class="tab">
+                <input type="radio" name="acc" id="acc1">
+                <label for="acc1">
+                    <h2>01</h2>
+                    <h3>Get to know ev3 MindStorm Robot</h3>
+                </label>
+                <div class="content">
+                    <p><strong>What is ev3 MindStorm Robot?</strong> The EV3 Mindstorms Robot is a cool LEGO kit that lets you build and program your own robots. It comes with special LEGO pieces, motors, sensors, and a brain (the programmable brick) that you can use to make your robot move, sense its environment, and do all sorts of fun stuff. <a href="https://ashl3y-lin.github.io/ev3-vocabulary/"><button class="vocab-button">Click here to learn the parts of ev3 and vocabs</button></a>
+                    </p> 
+                    <p>You can use a special APP(called ev3 Classroom) to write programs that control how your robot behaves. It's like playing with LEGOs but with the added bonus of making your creations come to life and do cool things! </p>
+                </div>
+                <img src="https://www.researchgate.net/publication/350921673/figure/fig1/AS:1172492953628677@1656555512964/Lego-mindstorms-education-EV3-core-and-expansion-sets.png" class="rounded-corner" alt="">
+                <img src="https://i.stack.imgur.com/wI9q6.jpg" class="rounded-corner" alt="ev3-img">
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc2">
+                <label for="acc2">
+                    <h2>02</h2>
+                    <h3>How to set up?</h3>
+                </label>
+                <div class="content">
+                    <p><a href="https://ashl3y-lin.github.io/ev3-classroom/"><button class="vocab-button">The steps to set up ev3 Classroom</button></a></p>
+                    <p><strong>Download the ev3 classroom:</strong> <a href="https://education.lego.com/en-us/downloads/mindstorms-ev3/software/"><code>https://education.lego.com/es-es/downloads/mindstorms-ev3/software/</code></a></p>
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/c1/24/1c/c1241cc0-73c2-e24f-e50e-ec2ee09d34b3/AppIcon-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png" class="rounded-corner" alt="img">
+                    <p>This is where you start programming!</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc3">
+                <label for="acc3">
+                    <h2>03</h2>
+                    <h3>The steps of Robotics</h3>
+                </label>
+                <div class="content">
+                    <p>
+                        <ul>
+                            <li><strong>Step 1</strong>: What you want the robot to do?
+                                <!-- <button class="get-to-know">Click here for more info</button> -->
+                            </li>
+                            <li><strong>Step 2</strong>: Build your robot design</li>
+                            <li><strong>Step 3</strong>: Begin programming</li>
+                            <li><strong>Step 4</strong>: Test and experiment</li>
+                            <li><strong>Step 5</strong>: Didn't work? Go back to step 2</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc4">
+                <label for="acc4">
+                    <h2>04</h2>
+                    <h3>Don't worry! I got you!</h3>
+                </label>
+                <div class="content">
+                    <p> I am going to guide you to learn:
+                        <ul>
+                            <li>1-<strong> Building: </strong>You will build the same robot I am using!</li>
+                            <li>2- <strong>Programming:</strong> I will show you from basic programming blocks to advance!</li>
+                            <li>(Below will be your guide(click the arrow))</li>
+                            <a href="#guidance-div"><img src="https://content.invisioncic.com/p289038/monthly_2020_05/arrow-down.gif.8d9aec7b8f92f2a50a1a64fce1733f3a.gif" alt="" class="arrow-down"></a>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- The Guidance-->
+        <div class="guidance-div" id="guidance-div">
+            <div class="guidance-p">
+                <div class="guidance-h3">
+                    <h3 class="h3-bold">WE BEGIN!</h3>
+                    <hr class="guidance-line">
+                    <h4>Follow these steps:</h4>
+
+                </div>
+                
+                <ol>
+                    
+                    <div class="button-guidance">
+                        <li><span class="circle">1</span><strong> It’s time for building!</strong> Download my PDF to build the robot:
+                        <a href="https://ashl3y-lin.github.io/PDF_one-time_buildDesign/"><button class="button-download">Download the PDF</button></a>
+                        </li>
+                    </div>
+                    
+                    
+                    <li><span class="circle">2</span> <strong>Begin programming:</strong> There are <span class="bold">10 topics</span> we're going to learn. (Begin with block pink: movement) 
+                        <button class="button-download pink pink-begin"><a href="https://ashl3y-lin.github.io/ANS-robotic_movement-part1/" class="pink-begin"> Click here to begin!</a></button></li>
+                </ol>
+            </div>
+        
+
+<!-- buttons -->
+        <div class="container-buttons" id="topic-buttons">
+            <div class="buttons-title">
+                <hr class="topics-line">
+                <h3>The 10 topics are:</h3>
+                <hr class="topics-line">
+            </div>
+            
+            <div class="button-row1">
+                
+                <button class="pink" id="movements-button">
+                    <a href="https://ashl3y-lin.github.io/ANS-robotic_movement-part1/">Movement</a>
+                </button>
+                <button class="blue" id="motors-button">
+                    <a href="">Motors</a>
+                </button>
+                <button class="purple" id="display-button">
+                    <a href="">Display</a>
+                </button>
+                <button class="violet" id="sound-button">
+                    <a href="">Sound</a>
+                </button>
+                <button class="skyblue" id="sensors-button">
+                    <a href="">Sensors</a>
+                </button>
+            </div>
+            <div class="button-row2">
+                <button class="light-orange" id="control-button">
+                    <a href="">Control</a>
+                </button>
+                <button class="yellow" id="events-button">
+                    <a href="">Events</a>
+                </button>
+                <button class="green" id="operators-button">
+                    <a href="">Operators</a>
+                </button>
+                <button class="orange" id="variables-button">
+                    <a href="">Variables</a>
+                </button>
+                <button class="red" id="myBlocks-button">
+                    <a href="">My Blocks</a>
+                </button>
+            </div>
+        </div>
+        <button class="rainbow" id="myBlocks-button">
+            <a href="">Coming soon: Advance</a>
+        </button>
+    </div>
+
+
+           <!-- Buttons for next -->
+           <div class="bottom-buttons">
+                <button id="home" class="home-icon"> <img src="https://i.ibb.co/1RdYhzK/browser.png" alt="home-icon-silhouette" height="30"></button>
+                
+                <a href="https://ashl3y-lin.github.io/ANS-robotic_movement-part1/"><button id="motors" class="next-button">Begin! (Movement) <img src="https://i.ibb.co/0CWHhM7/icons8-arrow-full-white.png" alt="icons8-arrow-full-white" height="30" ></button></a>
+            </div>
+   
+
+            <hr class="hr-middle">
+
+
+
+<!-- Accordion 2: questions and answers -->
+        <div class="accordion-container2" id="accordion-questions">
+            <h4 class="title-acc2"><span>Frequent questions:</span> 
+            </h4>
+            <h5>Why do some errors occur with my robot/programming?</h5>
+            <hr class="break2">
+            <div class="tab">
+                <input type="radio" name="Accc" id="Accc1">
+                <label for="Accc1">
+                    <h2>01</h2>
+                    <h3>Why is the robot so tight?</h3>
+                </label>
+                <div class="content">
+                    <p>The robot it’s tight and I can't move it because I haven’t stop the robot.</p>
+                    <p>Press the play/stop button:</p>
+                    <img src="https://s9.gifyu.com/images/SZlGc.gif" alt="Press stop"/>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="Accc" id="Accc2">
+                <label for="Accc2">
+                    <h2>02</h2>
+                    <h3>Why is the robot moving entirely different from what I want?</h3>
+                </label>
+                <div class="content">
+                    <p>-> Because you may have 2 yellow block of [When program starts]   </p>
+                    <p>-> Because your wheels are not fully attached.</p>
+                    <p>-> Set the wrong port (motor)</p>
+                    <p>-> Did not set the pair motor movement (refer to the pink block for more info)</p>
+                    <p>-> The cables are not fully connected.</p>
+                    <p>The battery is low.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="Accc" id="Accc3">
+                <label for="Accc3">
+                    <h2>03</h2>
+                    <h3>Why is my robot not moving like your instructions? Like your robot?
+                    </h3>
+                </label>
+                <div class="content">
+                    <p>
+                        <ul>
+                            <li>Don't worry if it's different. Every robot have their own measurement of degrees/rotations. 
+                            </li>
+                            <li>-> Some reasons why this happen might be:
+                            </li>
+                            <li>-> You put "rotations" instead of "degrees"</li>
+                            <li>-> Different type of ground.(I used rough wooden ground in some videos. And slippery in others)</li>
+                            <li>-> Weight of your robot</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="Accc" id="Accc4">
+                <label for="Accc4">
+                    <h2>04</h2>
+                    <h3>Why does my color sensor show a change of colors? </h3>
+                </label>
+                <div class="content">
+                    <p>
+                        <li>Check the color sensor:
+                        </li>
+                        <ul>
+                            <li>-> If the it shows red light: it’s for black and white only. It shows this when you use[light reflection].
+                            </li>
+                            <li>-> If it shows red/green/blue colors: it's for all the colors. When you use [colors]</li>
+                        </ul>
+                            
+                    </p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="Accc" id="Accc5">
+                <label for="Accc5">
+                    <h2>05</h2>
+                    <h3>Why is my robot not moving accurately?</h3>
+                </label>
+                <div class="content">
+                    <p>CHECK robot’s weight and balance. The robot should weight the same left and right.
+                    </p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="Accc" id="Accc6">
+                <label for="Accc6">
+                    <h2>06</h2>
+                    <h3>Why does my robot stop moving in the middle of the program?</h3>
+                </label>
+                <div class="content">
+                    <p> It happens mostly for one Motor ( you may call it [Robot’s arm]) because it never reached the degrees you wanted.
+                    </p>
+                    <p>To fix it: give less degrees</p>
+                </div>
+            </div>
+
+<!-- Closure of main wrapper -->
+        </div>
+
+        <div class="footer-container">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#topic-buttons">Topics</a></li>
+                    <li><a href="#wro">About WRO</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Ashley Lin </span> | Senior 2024 | American Nicaraguan School</p>
+            </div>
+        </div>
+
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+
+</footer>
+    
+
+
+    <script src="image-slider.js"></script>
+</body>
+</html>
