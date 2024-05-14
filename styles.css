@@ -31,6 +31,9 @@ body {
     background-color: #232222;
     color: #fff;
     padding: 0;
+    width: 100%;
+      position: fixed;
+    z-index: 99;
   }
 
   nav ul li img{
@@ -103,7 +106,7 @@ body {
 
   /* Section:main header */
   .main-wrapper{
-    padding-top: 24px;
+    padding-top: 80px;
     padding-left: 72px;
     padding-right: 72px;
     /* height: 100vh; */
