@@ -183,11 +183,21 @@
   
   }
   
-  .home-icon{
+ .home-icon{
   background-color:#232222b3;
   border: none;
   padding: 12px 16px;
-  border-radius: 50%;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  }
+ 
+  .home-icon > img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
   
   .home-icon:hover{
